@@ -1,0 +1,191 @@
+
+#######################################################################
+#
+#                 Cambridge Crystallographic Data Centre
+#                                CCDC
+#
+#######################################################################
+#
+# If this CIF has been generated from an entry in the Cambridge
+# Structural Database, then it will include bibliographic, chemical,
+# crystal, experimental, refinement or atomic coordinate data resulting
+# from the CCDC's data processing and validation procedures.
+#
+#######################################################################
+
+data_CSD_CIF_ABAGAO
+_audit_creation_date 2016-11-22
+_audit_creation_method CSD-ConQuest-V1
+_database_code_CSD ABAGAO
+_database_code_depnum_ccdc_archive 'CCDC 1498689'
+_chemical_formula_sum 'C14 H15 Cu1 N3 O5'
+_chemical_formula_moiety
+;
+(C14 H13 Cu1 N3 O4)n,H2 O1
+;
+_journal_coden_Cambridge 580
+_journal_volume 119
+_journal_year 2016
+_journal_page_first 563
+_journal_name_full 'Polyhedron '
+loop_
+_publ_author_name
+"A.Timothy Royappa"
+"A.D.Royappa"
+"R.F.Moral"
+"A.L.Rheingold"
+"R.J.Papoular"
+"D.M.Blum"
+"T.Q.Duong"
+"J.R.Stepherson"
+"O.D.Vu"
+"Banghao Chen"
+"M.R.Suchomel"
+"J.A.Golen"
+"G.Andre"
+"N.Kourkoumelis"
+"A.D.Mercer"
+"A.M.Pekarek"
+"D.C.Kelly"
+_chemical_name_systematic
+;
+catena-[(\m-ethanedioato)-(1-(pyridin-2-yl)-N-((pyridin-2-yl)methyl)methanamin
+e)-copper(ii) monohydrate]
+;
+_chemical_name_common
+;
+catena-[(mu-oxalato)-(di-(2-picolyl)amine)-copper(ii) monohydrate]
+;
+_cell_volume   2959.318
+_exptl_crystal_colour 'blue'
+_exptl_crystal_density_diffrn 1.656
+_exptl_crystal_description 'block'
+_diffrn_ambient_temperature 100
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt 0.0362
+_refine_ls_wR_factor_gt 0.0362
+_symmetry_cell_setting orthorhombic
+_symmetry_space_group_name_H-M 'P b c a'
+_symmetry_Int_Tables_number 61
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 1/2-x,-y,1/2+z
+3 -x,1/2+y,1/2-z
+4 1/2+x,1/2-y,-z
+5 -x,-y,-z
+6 -1/2+x,y,-1/2-z
+7 x,-1/2-y,-1/2+z
+8 -1/2-x,-1/2+y,z
+_cell_length_a 18.5834(8)
+_cell_length_b 8.3215(4)
+_cell_length_c 19.1366(7)
+_cell_angle_alpha 90
+_cell_angle_beta 90
+_cell_angle_gamma 90
+_cell_formula_units_Z 8
+loop_
+_atom_type_symbol
+_atom_type_radius_bond
+C 0.68
+H 0.23
+Cu 1.32
+N 0.68
+O 0.68
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Cu1 Cu 0.56165(2) 0.43062(4) 0.28700(2)
+O1 O 0.64917(12) 0.5891(2) 0.34381(10)
+O2 O 0.53447(12) 0.6511(2) 0.26192(10)
+O3 O 0.65868(13) 0.8518(3) 0.36868(11)
+O4 O 0.54528(12) 0.9114(2) 0.28233(11)
+N1 N 0.50185(14) 0.4072(3) 0.37356(12)
+N2 N 0.62594(15) 0.3848(3) 0.20563(12)
+N3 N 0.60376(14) 0.2231(3) 0.32100(12)
+H1 H 0.57550 0.13460 0.30130
+C1 C 0.63138(17) 0.7346(4) 0.33832(15)
+C2 C 0.59693(18) 0.2173(4) 0.39779(15)
+H2 H 0.63600 0.27650 0.41940
+H3 H 0.59900 0.10680 0.41390
+C3 C 0.52577(18) 0.2912(4) 0.41742(15)
+C4 C 0.67725(18) 0.2740(4) 0.21948(16)
+C5 C 0.43969(19) 0.4820(4) 0.38716(16)
+H4 H 0.42400 0.56200 0.35680
+C6 C 0.56533(17) 0.7708(4) 0.29063(15)
+C7 C 0.62106(19) 0.4481(4) 0.14073(16)
+H5 H 0.58560 0.52410 0.13150
+C8 C 0.39805(19) 0.4446(4) 0.44456(16)
+H6 H 0.35500 0.49840 0.45300
+C9 C 0.4219(2) 0.3252(4) 0.48922(17)
+H7 H 0.39460 0.29690 0.52810
+C10 C 0.67760(17) 0.2119(4) 0.29343(15)
+H8 H 0.69380 0.10110 0.29430
+H9 H 0.71010 0.27540 0.32190
+C11 C 0.6675(2) 0.4028(4) 0.08760(17)
+H10 H 0.66340 0.44730 0.04320
+C12 C 0.4860(2) 0.2482(4) 0.47595(16)
+H11 H 0.50260 0.16830 0.50590
+C13 C 0.72500(19) 0.2248(4) 0.16824(18)
+H12 H 0.76010 0.14840 0.17820
+C14 C 0.7199(2) 0.2905(5) 0.10193(18)
+H13 H 0.75190 0.25890 0.06710
+O5 O 0.76306(14) 0.9821(3) 0.45424(10)
+H14 H 0.78750 1.03440 0.42450
+H15 H 0.73300 0.92210 0.43320
+Cu1B Cu 0.43835(2) 0.93062(4) 0.21300(2)
+O4B O 0.45472(12) 0.4114(2) 0.21767(11)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+Cu1 O1 2.359 1_555 1_555
+O1 C1 1.259 1_555 1_555
+O2 Cu1 1.963 1_555 1_555
+O3 C1 1.243 1_555 1_555
+O4 C6 1.238 1_555 1_555
+N1 Cu1 2.004 1_555 1_555
+N2 Cu1 1.999 1_555 1_555
+N3 Cu1 2.004 1_555 1_555
+H1 N3 0.980 1_555 1_555
+C1 C6 1.559 1_555 1_555
+C2 N3 1.476 1_555 1_555
+H2 C2 0.970 1_555 1_555
+H3 C2 0.971 1_555 1_555
+C3 N1 1.354 1_555 1_555
+C4 N2 1.353 1_555 1_555
+C5 N1 1.338 1_555 1_555
+H4 C5 0.930 1_555 1_555
+C6 O2 1.274 1_555 1_555
+C7 N2 1.352 1_555 1_555
+H5 C7 0.930 1_555 1_555
+C8 C5 1.379 1_555 1_555
+H6 C8 0.931 1_555 1_555
+C9 C8 1.383 1_555 1_555
+H7 C9 0.931 1_555 1_555
+C10 N3 1.473 1_555 1_555
+H8 C10 0.970 1_555 1_555
+H9 C10 0.970 1_555 1_555
+C11 C7 1.386 1_555 1_555
+H10 C11 0.930 1_555 1_555
+C12 C3 1.389 1_555 1_555
+H11 C12 0.930 1_555 1_555
+C13 C4 1.384 1_555 1_555
+H12 C13 0.931 1_555 1_555
+C14 C11 1.377 1_555 1_555
+H13 C14 0.931 1_555 1_555
+O5 H14 0.848 1_555 1_555
+H15 O5 0.851 1_555 1_555
+Cu1B O4 2.395 1_555 1_555
+O4B Cu1 2.395 1_555 1_555
+C2 C3 1.506 1_555 1_555
+C4 C10 1.507 1_555 1_555
+C9 C12 1.376 1_555 1_555
+C13 C14 1.385 1_555 1_555
+#END

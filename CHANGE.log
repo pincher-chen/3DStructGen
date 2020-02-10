@@ -1,0 +1,21 @@
+3DStructGen 1.0.8, 2019-11-26
+-add help document and some examples
+
+3DStructGen 1.0.7, 2019-11-13
+- fix the bug of reading  ICSD files containing '\r' character.
+
+3DStructGen 1.0.6, 2019-10-18
+- add spglib API for identifying space-group type and searching irreducible k-points
+
+3DStructGen 1.0.5, 2019-09-30
+- add ChemTik API for geometry optimization by using UFF force filed method.
+
+3DStructGen 1.0.1, 2019-09-17
+----------------------
+- fix some bugs for the buttons of OABC, clear canvas and background color;
+- fix a bug for Gaussian interface for missing atom coordinates in Gaussian.gif
+
+***********************************
+3DStructGen 1.0.0, 2019-09-17
+----------------------
+- Initial beta release

@@ -1,0 +1,220 @@
+
+#######################################################################
+#
+#                 Cambridge Crystallographic Data Centre
+#                                CCDC
+#
+#######################################################################
+#
+# If this CIF has been generated from an entry in the Cambridge
+# Structural Database, then it will include bibliographic, chemical,
+# crystal, experimental, refinement or atomic coordinate data resulting
+# from the CCDC's data processing and validation procedures.
+#
+#######################################################################
+
+data_CSD_CIF_ABEYOX
+_audit_creation_date 2011-11-29
+_audit_creation_method CSD-ConQuest-V1
+_database_code_CSD ABEYOX
+_database_code_depnum_ccdc_archive 'CCDC 825186'
+_chemical_formula_sum 'C14 H16 La2 N4 O18'
+_chemical_formula_moiety
+;
+(C14 H12 La2 N4 O16)n,2n(H2 O1)
+;
+_journal_coden_Cambridge 9
+_journal_volume 50
+_journal_year 2011
+_journal_page_first 8437
+_journal_name_full 'Inorg.Chem. '
+loop_
+_publ_author_name
+"J.Cepeda"
+"R.Balda"
+"G.Beobide"
+"O.Castillo"
+"J.Fernandez"
+"A.Luque"
+"S.Perez-Yanez"
+"P.Roman"
+"D.Vallejo-Sanchez"
+_chemical_name_systematic
+;
+catena-(bis(\m~3~-pyrimidine-4,6-dicarboxylato)-(\m~2~-oxalato)-tetraaqua-di-l
+anthanum(iii) dihydrate)
+;
+_cell_volume   1136.183
+_exptl_crystal_colour 'colorless'
+_exptl_crystal_density_diffrn 2.357
+_exptl_crystal_description 'rectangular prism'
+_diffrn_ambient_temperature 100
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt 0.0202
+_refine_ls_wR_factor_gt 0.0202
+_symmetry_cell_setting monoclinic
+_symmetry_space_group_name_H-M 'P 21/n'
+_symmetry_Int_Tables_number 14
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 1/2-x,1/2+y,1/2-z
+3 -x,-y,-z
+4 -1/2+x,-1/2-y,-1/2+z
+_cell_length_a 6.9220(11)
+_cell_length_b 16.9702(2)
+_cell_length_c 9.8262(2)
+_cell_angle_alpha 90
+_cell_angle_beta 100.154(2)
+_cell_angle_gamma 90
+_cell_formula_units_Z 2
+loop_
+_atom_type_symbol
+_atom_type_radius_bond
+C 0.68
+H 0.23
+La 2.07
+N 0.68
+O 0.68
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+La1 La 0.735219(18) 0.143556(7) 0.173343(12)
+N1 N 0.5714(3) 0.15706(11) 0.41223(19)
+C1 C 0.4781(3) 0.21941(13) 0.4525(2)
+H1 H 0.42760 0.25570 0.38450
+N2 N 0.4503(3) 0.23473(11) 0.58111(19)
+C2 C 0.5267(3) 0.18234(13) 0.6788(2)
+C3 C 0.6173(3) 0.11370(13) 0.6466(2)
+H2 H 0.66410 0.07660 0.71410
+C4 C 0.6352(3) 0.10273(13) 0.5105(2)
+C5 C 0.7326(3) 0.02992(13) 0.4630(2)
+O1 O 0.7775(2) 0.03526(10) 0.34310(15)
+O2 O 0.7566(2) -0.02749(9) 0.54043(16)
+C6 C 0.5166(3) 0.20294(13) 0.8275(2)
+O3 O 0.4027(2) 0.25753(9) 0.84885(16)
+O4 O 0.6270(2) 0.16429(9) 0.91757(16)
+O5 O 0.4137(2) 0.07335(10) 0.09996(16)
+C7 C 0.4013(3) 0.01589(13) 0.0172(2)
+O6 O 0.2472(2) -0.01715(9) -0.03874(16)
+O7 O 0.4999(3) 0.25953(9) 0.13810(16)
+O8 O 1.0935(2) 0.1062(1) 0.22138(17)
+O9 O 0.5876(3) 0.39838(11) 0.25750(18)
+H3 H 0.53840 0.30480 0.17200
+H4 H 0.51100 0.26410 0.04850
+H5 H 1.18620 0.09750 0.17590
+H6 H 1.13120 0.08270 0.29830
+H7 H 0.62480 0.43780 0.21200
+H8 H 0.61840 0.42630 0.33520
+La1B La 0.264781(18) -0.143556(7) -0.173343(12)
+La1* La 0.735219(18) 0.143556(7) 1.173343(12)
+La1A La 0.764781(18) -0.356444(7) -0.673343(12)
+La1B* La 0.264781(18) -0.143556(7) -1.173343(12)
+La1C La 0.235219(18) 0.356444(7) 0.673343(12)
+N1B N 0.4286(3) -0.15706(11) -0.41223(19)
+C1B C 0.5219(3) -0.21941(13) -0.4525(2)
+H1B H 0.57240 -0.25570 -0.38450
+N2B N 0.5497(3) -0.23473(11) -0.58111(19)
+N2A N 0.0497(3) -0.26527(11) -0.08111(19)
+N2C N 0.9503(3) 0.26527(11) 0.08111(19)
+C2B C 0.4733(3) -0.18234(13) -0.6788(2)
+C3B C 0.3827(3) -0.11370(13) -0.6466(2)
+H2B H 0.33590 -0.07660 -0.71410
+C4B C 0.3648(3) -0.10273(13) -0.5105(2)
+C5B C 0.2674(3) -0.02992(13) -0.4630(2)
+O1B O 0.2225(2) -0.03526(10) -0.34310(15)
+O2B O 0.2434(2) 0.02749(9) -0.54043(16)
+C6B C 0.4834(3) -0.20294(13) -0.8275(2)
+O3B O 0.5973(2) -0.25753(9) -0.84885(16)
+O3A O 0.0973(2) -0.24247(9) -0.34885(16)
+O3C O 0.9027(2) 0.24247(9) 0.34885(16)
+O4B O 0.3730(2) -0.16429(9) -0.91757(16)
+O4* O 0.6270(2) 0.16429(9) -0.08243(16)
+O4B* O 0.3730(2) -0.16429(9) 0.08243(16)
+O5B O 0.5863(2) -0.07335(10) -0.09996(16)
+C7B C 0.5987(3) -0.01589(13) -0.0172(2)
+O6B O 0.7528(2) 0.01715(9) 0.03874(16)
+O7B O 0.5001(3) -0.25953(9) -0.13810(16)
+O8B O -0.0935(2) -0.1062(1) -0.22138(17)
+H3B H 0.46160 -0.30480 -0.17200
+H4B H 0.48900 -0.26410 -0.04850
+H5B H -0.18620 -0.09750 -0.17590
+H6B H -0.13120 -0.08270 -0.29830
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+La1 N1 2.791 1_555 1_555
+N1 C1 1.335 1_555 1_555
+C1 H1 0.930 1_555 1_555
+N2 C1 1.337 1_555 1_555
+C2 N2 1.346 1_555 1_555
+C3 C2 1.386 1_555 1_555
+H2 C3 0.930 1_555 1_555
+C4 N1 1.352 1_555 1_555
+C5 C4 1.520 1_555 1_555
+O1 La1 2.464 1_555 1_555
+O2 C5 1.229 1_555 1_555
+C6 C2 1.516 1_555 1_555
+O3 C6 1.258 1_555 1_555
+O4 C6 1.249 1_555 1_555
+O5 La1 2.515 1_555 1_555
+C7 O5 1.263 1_555 1_555
+O6 C7 1.244 1_555 1_555
+O7 La1 2.539 1_555 1_555
+O8 La1 2.522 1_555 1_555
+O9 H7 0.869 1_555 1_555
+H3 O7 0.861 1_555 1_555
+H4 O7 0.901 1_555 1_555
+H5 O8 0.857 1_555 1_555
+H6 O8 0.854 1_555 1_555
+H8 O9 0.892 1_555 1_555
+La1B O6 2.534 1_555 1_555
+La1* O4 2.517 1_555 1_555
+La1A N2B 2.789 1_555 1_555
+La1B* O4B 2.517 1_555 1_555
+La1C N2 2.789 1_555 1_555
+N1B La1B 2.791 1_555 1_555
+C1B N1B 1.335 1_555 1_555
+H1B C1B 0.930 1_555 1_555
+N2B C1B 1.337 1_555 1_555
+N2A La1B 2.789 1_555 1_555
+N2C La1 2.789 1_555 1_555
+C2B N2B 1.346 1_555 1_555
+C3B C2B 1.386 1_555 1_555
+H2B C3B 0.930 1_555 1_555
+C4B N1B 1.352 1_555 1_555
+C5B C4B 1.520 1_555 1_555
+O1B La1B 2.464 1_555 1_555
+O2B C5B 1.229 1_555 1_555
+C6B C2B 1.516 1_555 1_555
+O3B La1A 2.536 1_555 1_555
+O3A La1B 2.536 1_555 1_555
+O3C La1 2.536 1_555 1_555
+O4B C6B 1.249 1_555 1_555
+O4* La1 2.517 1_555 1_555
+O4B* La1B 2.517 1_555 1_555
+O5B La1B 2.515 1_555 1_555
+C7B C7 1.560 1_555 1_555
+O6B La1 2.534 1_555 1_555
+O7B La1B 2.539 1_555 1_555
+O8B La1B 2.522 1_555 1_555
+H3B O7B 0.861 1_555 1_555
+H4B O7B 0.901 1_555 1_555
+H5B O8B 0.857 1_555 1_555
+H6B O8B 0.854 1_555 1_555
+C3 C4 1.377 1_555 1_555
+C5 O1 1.274 1_555 1_555
+O3 La1C 2.536 1_555 1_555
+C3B C4B 1.377 1_555 1_555
+C5B O1B 1.274 1_555 1_555
+C6B O3B 1.258 1_555 1_555
+O5B C7B 1.263 1_555 1_555
+C7B O6B 1.244 1_555 1_555
+#END

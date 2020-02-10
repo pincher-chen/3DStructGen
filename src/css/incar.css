@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+#incar_top{
+	width:615px;;
+	height:60px;
+	margin:10% 5% auto 5%;
+	position:relative;
+	top:5px;
+	z-index:120;
+}
+
+#incar_top_1{
+	width:280px;
+	height:60px;
+	font-weight:bold;
+	border:#999 outset 5px;
+	border-bottom:none;
+	border-radius:10px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	background-color:#F2F2F2;
+	padding-top:15px;
+	padding-left:3%;
+	float:left;
+}
+
+#incar_top_1:hover{
+	border:inset #E1E1E1 5px;
+	border-bottom:none;
+	cursor:pointer; 
+}
+
+#incar_top_2{
+	width:120px;
+	height:60px;
+	font-weight:bold;
+	border:#999 outset 5px;
+	border-radius:10px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	background-color:#F2F2F2;
+	padding-top:15px;
+	padding-left:3%;
+	float:left;
+}
+
+#incar_top_2:hover{
+	border:inset #E1E1E1 5px;
+	border-bottom:none;
+	cursor:pointer; 
+}
+
+#incar_top_3{
+	width:145px;
+	height:60px;
+	font-weight:bold;
+	border:#999 outset 5px;
+	border-radius:10px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	background-color:#F2F2F2;
+	padding-top:15px;
+	padding-left:3%;
+	float:left;
+}
+
+#incar_top_3:hover{
+	border:inset #E1E1E1 5px;
+	border-bottom:none;
+	cursor:pointer; 
+}
+
+#incar{
+	width:90%;
+	height:500px;
+	/*border:#000 solid 2px;*/
+	margin:0 5% auto 5%;
+	position:relative;
+}
+
+#S-O-P{
+	width:615px;
+	height:80%;
+	border:#999 solid 5px;
+	border-radius:10px;
+	border-top-left-radius:0;
+	background-color:#F2F2F2;
+	padding-top:4%;
+	padding-left:2%;
+	float:left;
+	position:absolute;
+	z-index:110;
+}
+
+.part-1-1{
+	margin-left:37%;
+}
+
+.part-1-2{
+	margin:3% 0;
+}
+
+#I{
+	width:615px;
+	height:80%;
+	border:#999 inset 5px;
+	border-radius:10px;
+	background-color:#F2F2F2;
+	/*margin:5% 0 5% 5%;*/
+	padding-top:4%;
+	float:left;
+	position:absolute;
+	z-index:100;
+}
+
+.part-2-1{
+	margin-left:5%;
+}
+
+.part-2-2{
+	margin-left:-15px;
+	height:7.5%;
+	/*border:#000 solid 1px;*/
+}
+
+.part-2-3{
+	margin-top:10px;
+}
+
+#G-S{
+	width:615px;
+	height:80%;
+	border:#999 inset 5px;
+	border-radius:10px;
+	background-color:#F2F2F2;
+	/*margin:5% 0 5% 5%;*/
+	padding-top:4%;
+	padding-left:2%;
+	float:left;
+	position:absolute;
+	z-index:90;
+}
+
+.part-3-2{
+	margin-left:37%;
+}
+
+.part-3-3{
+	margin-top:10px;
+}
+option{
+	font-size:16px;
+	background-color:#CCC !important;
+}

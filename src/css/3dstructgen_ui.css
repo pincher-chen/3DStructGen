@@ -1,0 +1,389 @@
+@charset "utf-8";
+#html{
+	width: 100%;
+	height: 100%;
+}
+#body{
+	width:100%;
+	height:100%;
+}
+#content{	
+	margin-top:0px;
+	margin-left: 0px; 
+	width:100%;
+	height:98%;
+	background-color:#000;
+	/*margin: 0px auto;*/
+	position:relative;
+}
+#adjunct-1{
+	width:auto;
+	height:6.2%;
+	background-color:#EBEBEB;
+	border:outset #C7C7C7 2px;
+}
+#adjunct-2{
+	width:5%;
+	height:93.8%;
+	text-align:center;
+	background-color:#9F9F9F;
+	border:ridge #797979 2px;
+}
+#adjunct-3{
+	width:5%;
+	height:93.8%;
+	text-align:center;
+	background-color:#9F9F9F;
+	border:ridge #797979 2px;
+	position:absolute;
+	top:6.2%;
+	left: 5%;
+}
+#main{
+	width:63%;
+	height:93.8%;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+}
+#molcanvas{
+	display: block;
+	background-color: #000;
+}
+.top-bar1{
+	width: 100%;
+	height: 5%;
+	top: 20%;
+	position:absolute;
+	font-size: 150%;
+	text-indent: 2%;
+	color: #000;
+	background-color:#EBEBEB; 
+	border-top:1px solid #9F9F9F; 
+	border-right:1px solid #9F9F9F; 
+}
+.top-bar2{
+	width: 100%;
+	height: 5%;
+	top: 65%;
+	position:absolute;
+	font-size: 150%;
+	text-indent: 2%;
+	color: #000;
+	background-color:#EBEBEB; 
+	border-top:1px solid #9F9F9F; 
+	border-right:1px solid #9F9F9F; 
+}
+#formula{
+	width:100%;
+	height: 20%;
+	font-size: 200%;
+	top: 0%;
+	position:absolute;
+	background-color:#EBEBEB ;
+	text-align: center;
+	border-right: 1px solid #9F9F9F;
+}
+#information{
+	width: 100%;
+	height: 40%;
+	left: 0%;
+	top: 25%;
+	position:absolute;
+	background-color: #FFF;
+}
+#infowin{
+	width:27%;
+	height:93.8%;
+	position:absolute;
+	top:6.2%;
+	left:73%;
+}
+#property{
+	width:100%;
+	height:30%;
+	position:absolute;
+	top:70%;
+	left:0%;
+	background: #FFF;
+}
+.top{
+	height:100%;
+	width: 10%;
+	text-align:center;
+	vertical-align:middle;
+	float:left;
+	font-weight:bold;
+}
+#top-1{
+	list-style:none;
+	height: 100%;
+}
+.btn-group{
+	height:4.8%;
+}
+.btn{
+	background-color:#EBEBEB;
+	height: 100%;
+	width: 100%;
+	font-size: 120%;
+	font-weight: bold;
+}
+.top:hover{
+	background-color:#E1E1E1;
+	border:inset #E1E1E1 1px;
+	cursor:pointer; 
+}
+#mode{
+	padding-top: 0.7%;
+	font-size: 120%;
+}
+
+.left{
+	width:95%;
+	height:4.8%;
+	margin-bottom:8%;
+}
+.rotate{
+	width:63%;
+	height:6%;
+	border:#E8E8E8 solid 2px;
+	/*border-radius:5px;*/
+	background-color:#EBEBEB;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+	display:none;
+}
+
+.rotate button {
+	width:7%;
+	height: 70%;
+	margin-top:1%;
+	margin-left:1%;
+}
+
+/*#submenu{
+	display: none;
+}*/
+
+.abc{
+	width:63%;
+	height:6%;
+	border:#E8E8E8 solid 2px;
+	/*border-radius:5px;*/
+	background-color:#EBEBEB;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+	display:none;
+}
+.abc button{
+	height: 70%;
+	width: 7%;
+	float:left;
+	margin-left:1%;
+	margin-top:1%;
+}
+.xyz{
+	width:63%;
+	height:6%;
+	border:#E8E8E8 solid 2px;
+	/*border-radius:5px;*/
+	background-color:#EBEBEB;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+	display:none;
+}
+.xyz button{
+	height: 70%;
+	width: 7%;
+	float:left;
+	margin-left:1%;
+	margin-top:1%;
+}
+#dir1,#dir2,#dir3{
+	margin-top:8px;
+	margin-left:15px;
+}
+.step-1{
+	margin-top:8px;
+	margin-left: 5px;
+	/*margin-bottom:4px;*/
+}
+.size{
+	width:63%;
+	height:6%;
+	border:#E8E8E8 solid 2px;
+	/*border-radius:5px;*/
+	background-color:#EBEBEB;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+	display:none;
+}
+.size button{
+	width: 7%;
+	height: 70%;
+	float:left;
+	margin-left:1%;
+	margin-top:1%;
+}
+
+.elements{
+	width:950px;
+	height:600px;
+	padding-left: 7px;
+	background-color:#FFF;
+	border:#999 solid 2px;
+	border-radius:5px;
+	position:absolute;
+	top:0;
+	left:60px;
+	display:none;
+}
+.delete{
+	width:110px;
+	height:10%;
+	background-color:#FFF;
+	border:#999 solid 2px;
+	border-radius:5px;
+	position:absolute;
+	top:235px;
+	left:122px;
+	display:none;
+}
+.delete button{
+	width:90px;
+    height: 30px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.bonds{
+	width:100px;
+	height:15%;
+	background-color:#FFF;
+	border:#999 solid 2px;
+	border-radius:5px;
+	position:absolute;
+	top:260px;
+	left:122px;
+	display:none;
+	text-align:center;
+}
+.bonds button{
+	width:80px;
+    height: 30px;
+    display: block;
+    margin-left: 8px;
+    margin-top:5px;
+}
+.translate{
+	width:63%;
+	height:6%;
+	border:#E8E8E8 solid 2px;
+	/*border-radius:5px;*/
+	background-color:#EBEBEB;
+	position:absolute;
+	top:6.2%;
+	left:10%;
+	display:none;
+}
+.translate button{
+	height: 70%;
+	width: 7%;
+	float:left;
+	margin-left:1%;
+	margin-top:1%;
+}
+
+.pt-space,.pt-element{
+	float:left;
+	border-radius:5px;
+}
+.pt-element{
+	cursor:pointer;
+	text-align:center;
+	overflow:hidden
+}
+.pt-space,.pt-element{
+	width:40px;
+	height:40px
+}
+.pt-element>h3{
+	display:none;
+	margin:0;
+	margin-top:5px;
+	font-size:6pt;
+	font-weight: 700;
+}
+.pt-element>h4{
+	display:block;
+	margin:0;
+	font-size:9pt;
+	line-height:30px;
+	font-weight: 700;
+}
+.pt-element:hover{
+	background-color: rgb(230, 230, 230);
+}
+@media all and (min-width:600px){
+.pt-space,.pt-element{
+	width:50px;
+	height:50px
+}
+.pt-element>h3{
+	display:block;
+	margin:0;
+	margin-top:5px;
+	font-size:6pt
+}
+.pt-element>h4{
+	display:block;
+	margin:0;
+	font-size:14pt;
+	line-height:20pt
+}
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+	display: block;
+}
+.dropdown-submenu > a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #ccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+.dropdown-submenu:hover > a:after {
+	border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+	float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+}

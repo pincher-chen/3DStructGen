@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3DStructGen Overview</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./thirdparty/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+/* Custom Styles */
+    ul.nav-tabs{
+        width: 230px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+		height:497px;
+		overflow:scroll;
+		overflow-x:hidden;
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+	.size1{
+		font-size:18px
+	}
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+   <div class="jumbotron">
+        <h1>3DStructGen Help Document</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1" class="size1">Overview</a></li>
+                <li><a href="#section-2">· Screenshots</a></li>
+                <li><a href="#section-3" class="size1">Browser Requirement</a></li>
+                <li><a href="#section-4" class="size1">User Interface</a></li>
+                <li><a href="#section-5">· Top bar</a></li>
+                <li><a href="#section-6">· Left buttons</a></li>
+                <li><a href="#section-7">· Right bank</a></li>
+                <li><a href="#section-8" class="size1">Mouse Operation</a></li>
+                <li><a href="#section-9">· In view mode</a></li>
+                <li><a href="#section-10">· In draw mode</a></li>
+                <li><a href="#section-11" class="size1">Drawing Operation</a></li>
+                <li><a href="#section-12">· Add new atom</a></li>
+                <li><a href="#section-13">· Delete atom</a></li>
+                <li><a href="#section-14">· Add new bond</a></li>
+                <li><a href="#section-15">· Change bond type</a></li>
+                <li><a href="#section-16">· Delete bond</a></li>
+                <li><a href="#section-17" class="size1">File Format</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h1 id="section-1">3DStructGen Overview</h1>
+            <p>3DStructGen is an interactive web-based application for viewing and editing non-periodic molecules and crystals. It can also perform various calculations on molecules or crystal structures, which can be utilized in many fields. And you don't need any installation, additional plugins or Java, which is of great convenience.</p>
+            <p>You can create molecules of any structures by choosing elements and adding one atom at a time, or load existing files in different formats alternatively. You are free to edit and modify any loaded structures and use optimize button to optimize structures of your own creation.</p>
+            <p>We pay special attention to crystal structures. For crystal structures (in .CIF format), we can view molecules in different modes and make useful calculations on them.</p>
+            <h2 id="section-2">Screenshots</h2>
+            <div>
+                <img src="./src/img/documentation/AFEHOI.png" width="500px" height="400px"/><br>
+                <em style="margin-left:230px">MOF material</em></div>
+            <div><img src="./src/img/documentation/MgO.png" width="500px" height="400px"/><br>
+                <em style="margin-left:170px">MgO supercell with line display style</em></div>
+            <div><img src="./src/img/documentation/C26HN5O.png" width="500px" height="400px"/><br>
+                <em style="margin-left:170px">C26HN5O molecule (non-periodic)</em></div>
+            <hr><br>
+            
+            <h1 id="section-3">Browser Requirement</h1>
+            <p class="NoCanvas" id="NoCanvas" style=" display: inline;">
+                <strong>Your browser does NOT appear to support the required HTML5 Canvas element.</strong></p>
+            <p class="OKCanvas" id="OKCanvas" style="display: none;">
+                <strong>Your browser supports the required HTML5 features.</strong></p>
+            
+            <script type="text/javascript">
+            if ( !!document.createElement('canvas').getContext ) {
+                document.getElementById("BrowserTest").style.backgroundColor = "lime";
+                document.getElementById("NoCanvas").style.display = "none";
+                document.getElementById("OKCanvas").style.display = "inline";
+                }
+            </script>
+    
+            <p>
+            The interactive drawing window used on this website requires HTML5, which is NOT supported by version 8
+            or lower of Microsoft Internet Explorer.  To use this site, you will need to use a browser that
+            supports the Canvas element and a few other features of HTML5. The followings are several freely available
+            web browsers that should work with this interface.
+            </p>
+    
+            <ul>
+                <li><a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> - Available for Microsoft Windows,
+                    Apple, Linux, and Android.</li>
+                <li><a href="https://www.google.com/intl/en/chrome/browser">Google Chrome</a> - Available for Microsoft Windows,
+                    Apple, Linux, Android, and iOS.</li>
+                <li><a href="http://www.opera.com/browser/download/">Opera</a> - While not as popular, is available for Microsoft
+                    Windows, Apple, Linux, Android, and iOS.</li>
+                <li><a href="https://www.apple.com/safari/">Apple Safari</a> - Should already be installed on current Mac
+                    computers.</li>
+            </ul>
+    
+            <p>
+            Currently, touch screen devices are NOT fully supported by this interface. While the web page will load, several
+            important tasks do not function properly on tablets or other touch screen devices.
+            </p>
+            <hr><br>
+            
+            <h1 id="section-4">User Interface</h1>
+            <p>
+                In default, you are in <b>View Mode</b>. You can swicth to <b>Drawing Mode</b> at any time you want by click the switch button <button>Mode</button> at top left.
+            </p>
+            <p>
+                Initially, the methane molecule is displayed on the canvas when the page is loaded. 
+            </p>
+            <div><img src="./src/img/documentation/interface.png" width="800px" height="400px"/></div>
+            
+            <h2 id="section-5">Top bar</h2>
+            <p><button>Mode</button> Switch button between two modes.</p>
+            <p><button>File</button> Load or export files, and you can save a screen shot of the plot as well.</p>
+            <p><button>Build</button> > <button>Build Crystal</button> For crystal structures, you can build crystals systematically.
+                <div><img src="./src/img/documentation/build_crystal.png" width="700px" height="500px"/></div><br>
+                <p>Enter the parameters of the crystal, and add one or more atom as you want.</p>
+            <p><button>Build</button> > <button>Build Vacuum Slab</button> When the cleaving surface operation is finished, you can build a slab of vacuum by entering the thickness you want.</p>
+                <div><img src="./src/img/documentation/build_vacuum_slab.png" width="500px" height="300px"/></div><br>
+            <p><button>Build</button> > <button>Cleave Surface</button> For crystal structures, you can cleave the structure to get a specific surface as you want. </p>
+                <div><img src="./src/img/documentation/build_cleave_surface.png" width="600px" height="400px"/></div>
+            <ul>
+                <li><b>Cleave plane(h k l)</b>: Direction of the cleave plane.</li>
+                <li><b>Thickness</b>: Thickness of the surface slab.</li>
+                <li><b>Surface vectors</b>:Two basis vectors that span a given surface orientation are recommended by 3DStructGen. Users can also modify those values </li>
+            </ul>
+            <p><button>Build</button> > <button>Supercell</button> For crystal structures, you can create supercells by entering numbers of periods along each axes.</p>
+                <div><img src="./src/img/documentation/build_supercell.png" width="500px" height="300px"/></div><br>
+            <p><button>Build</button> > <button>Symmetry</button> For crystal structures, you can call symmetry informations (irreducible k-points, space group). They are shown in system window.</p>
+                <div><img src="./src/img/documentation/symmetry.png" width="800px" height="400px"/></div><br>
+            <p><button>Cleanup</button> > <button>Mechanics Optimize</button> Optimize the structures using mechanics.</p>
+            <p><button>Cleanup</button> > <button>UFF Optimize</button> Optimize the structure using ChemKit API with UFF forcefield method in Open Babel.</p>
+            <p><button>Cleanup</button> > <button>Initialize Canvas</button> Initialize canvas to methane molecule.</p>
+            <p><button>Cleanup</button> > <button>Clear Canvas</button> Clear the canvas completely.</p>
+            <p><button>Cleanup</button> > <button>Clear System Window</button> Clear system window.</p>
+            <p><button>Cleanup</button> > <button>Clear Property Window</button> Clear property window.</p>
+            <P><button>Calculate</button> > <button>VASP</button> For crystal structures, you can generate KPOINT, POSCAR and INCAR files for VASP.</p>
+                <div><img src="./src/img/documentation/VASP.png" width="600px" height="500px"/></div><br>
+            <p><button>Calculate</button> > <button>Gaussian</button> For non-periodic molecules, you can initiate Gaussian calculation and export the result.</p>
+                <div><img src="./src/img/documentation/gaussian.png" width="800px" height="400px"/></div><br>
+            <p><button>MOF</button> > <button>highlight</button> For MOF structures, you can highlight framework, solvent or guest molecule if you want.</p>
+                <div><img src="./src/img/documentation/AFEHOI.png" width="500px" height="400px"/></div>
+                <div><img src="./src/img/documentation/highlite.png" width="500px" height="400px"/></div>
+                <em style="margin-left:200px">Framework highlighted</em><br><br><br><br>
+            <p><button>MOF</button> > <button>hide</button> For MOF structures, you can hide framework, solvent or guest molecule if you want.</p>
+                <div><img src="./src/img/documentation/hide.png" width="500px" height="400px"/></div>
+                <em style="margin-left:200px">Guest hided</em><br><br><br><br>
+            <p><button>Help</button> Get the documentation of <em>3DStructGen</em></p>
+           
+            
+            <h2 id="section-6">Left Buttons</h2>
+            <p>There are two sets of left buttons. Left ones are for various viewing operation. Right ones are for editing operations.</p>
+            <p><button><img src="./src/img/icons/pos.png" width="30px" height="20px" ></button> Show the coordinates of atoms in system window.</p>
+            <p><button><i class="fa fa-tags viewicon"></i></button> Attach labels on each atoms of the display.</p>
+            <div><img src="./src/img/documentation/labels_coordinates.png" width="800px" height="400px"/></div><br>
+            <p><button><i class="fa fa-arrows viewicon" style="font-size:120%"></i></button> Change mouse operation into translate mode. It means that if you click and drag the srceen, molecule will translate with the mouse.</p>
+            <p><button><i class="fa fa-repeat viewicon" style="font-size:120%"></i></button> Change mouse operation into rotate mode. It means that if you click and drag the srceen, molecule will rotate with the mouse.</p>
+            <p><button><img src="./src/img/icons/atomH.png" width="30px" height="20px"></button> Hide or show all the H atoms.</p>
+            <p><button><img src="./src/img/icons/hidebond.png" width="30px" height="20px" ></button> Hide or show all bonds.</p>
+            <p><button>OABC</button> Hide or show "OABC" labels along axes of crystal cube. Only for crystal structures.</p>
+                <div><img src="./src/img/documentation/oabc_axis.png" width="800px" height="550px"/></div><br>
+            <p><button><i class="fa fa-medium viewicon"></i><span class="caret viewicon"></span></button> How to display atoms and bonds on canvas. There are three styles for chosen:</p>
+            <ul>
+                <li><b>Ball and stick</b> Default style. Display atom as a ball whose radius is proportional to the element radius, and bonds as a cylinder of two atom colors.</li>
+                <li><b>Stick</b> Do not display atoms. Display bonds as cylinders with two atom colors.</li>
+                <li><b>Line</b> Do not display atoms. Display bonds as lines with two atom colors.</li>
+            </ul>
+            <p><button><img src="./src/img/icons/xuanzhuan3.png" width="30px" height="20px" ><span class="caret"></span></button> You can make the molecule rotate without mouse draging.</p>
+                <div><img src="./src/img/documentation/rotate.png" width="800px" height="30px"/></div><br>
+            <p><button><img src="./src/img/icons/xuanzhuan3.png" width="30px" height="20px" ><span class="caret"></span></button> > <button>rotate-X</button>/<button>rotate-Y</button>/<button>rotate-Z</button> Make the molecule rotate around axes automatically.</p>
+            <p><button><img src="./src/img/icons/xuanzhuan3.png" width="30px" height="20px" ><span class="caret"></span></button> > <button>Rotate around x+axis</button> One single rotation along axes. You can set the angle of the rotation.</p>
+            <p><button>abc</button> View the molecule along "a", "b", or "c" axis.</p>
+                <div><img src="./src/img/documentation/oabc.png" width="800px" height="30px"/></div><br>
+            <p><button>zoom</button> Zoom in or zoom out, or back to normal size.</p>
+                <div><img src="./src/img/documentation/zoom.png" width="800px" height="30px"/></div><br>
+            <p><button><i class="fa fa-skype viewicon"></i><span class="caret viewicon"></span></button> For crystal structures, you can display the molecule in four different styles.</p>
+            <ul>
+                <li><b>Asymmetric</b> The minimal subunit of a crystal is presented, consisting of one or more atoms, ions, or molecules, of which geometric arrangement is not related by crystallographic symmetry..
+                    <div><img src="./src/img/documentation/asymmetry.png" width="500px" height="400px"/></div></li>
+                <li><b>Origin</b> Using this style, each atom will be displayed in its original location, together with copies formed by applying each of the operators of the symmetry group.
+                    <div><img src="./src/img/documentation/origin.png" width="500px" height="400px"/></div></li>
+                <li><b>In-cell</b> The atoms are displayed based on whether their coordinates, as well as their symmetric copies are in the lattice cell.
+                    <div><img src="./src/img/documentation/incell.png" width="500px" height="400px"/></div></li>
+                <li><b>Packing</b> The complete molecules and their symmetric copies in a lattice cell will be displayed depending on the geometric center of connected sets of atoms. This gives a display of conventional cell for most types of crystal system.</li>
+            </ul>
+            <p><button><img src="./src/img/icons/hidecube.png" width="25px" height="20px" ></button> For crystal structures, hide or show the cube.</p>    
+            <p><button><i class="fa fa-crosshairs viewicon" style="font-size: 150%;"></i></button> Recenter the molecule. Make it at the middle of the screen.</p>
+            <p><button><img src="./src/img/icons/color.png" width="20px" height="20px"></button> Set the background color of the display.</p>
+    
+            <p><button><i class="fa fa-building-o drawicon"></i></button> In draw mode, you can select the element of new atom by calling the periodic table below and select the element you want.</p>
+                <div><img src="./src/img/documentation/periodic_table.png" width="700px" height="400px"/></div>
+            <p><button>s</button>/<button>sp</button>/<button>sp2</button>/<button>sp3</button> The <b>sp type</b> of new atom, indicating how many H atoms will be attached to the new atom automatically.</p>
+            <p><button><img src="./src/img/icons/deleteatom1.png" width="30px" height="20px"></button> Change mouse operation into atom delete mode. In this mode, if you click on an atom, the atom will be deleted. Bonds and H atoms attached to the deleted atom will alse be deleted.</p>
+            <p><button><img src="./src/img/icons/deletebond1.png" width="30px" height="20px"></button> Change mouse operation into bond delete mode. In this mode, if you press on an atom, and then drag onto another atom and release, the bond between the two atoms will be deleted. </p>
+            <p><button><img src="./src/img/icons/singlebond.png" width="30px" height="20px"></button>/<button><img src="./src/img/icons/doublebond.png" width="30px" height="20px"></button>/<button><img src="./src/img/icons/triplebond.png" width="30px" height="20px"></button> Determine the type of bond being added next.</p>
+            <p><button><img src="./src/img/icons/rotatebond.png"  width="30px" height="25px"></button></button> Click this button, and then you can select one bond (See ......). Once you have selected a bond, molecule will rotate till the bond is perpendicular to the screen. 
+                Then you can drag mouse to rotate part of the molecule around this bond.
+            </p>
+            <p><button><img src="./src/img/icons/t5.png" width="30px" height="20px"><span class="caret drawicon" style="color:rgba(100, 100, 100, 0.4)"></span></button> You can translate atom by step, and set the step value if you want.</p>
+                <div><img src="./src/img/documentation/translate.png" width="800px" height="30px"/></div><br>
+            <p><button><img src="./src/img/icons/mechanics1.png" width="30px" height="20px"></button> You can optimize the structure by pressing this button as well.</p>
+            <p><button><i class="fa fa-mail-reply drawicon"></i></button>/<button><i class="fa fa-mail-forward drawicon" ></i></button> In draw mode, you can undo your last operation or redo your operation.
+            </p>
+            
+            <h2 id="section-7">Right bank</h2>
+            <p>There are three banks at the right side.</p>
+            <div><img src="./src/img/documentation/right_banks.png" width="250px" height="400px"/></div><br>
+            <ul>
+                <li><b>Formula bank</b>: Display chemical formula of the molecule.</li>
+                <li><b>System window</b>: Display global informations of molecule, calculation results, and other informations of the system.</li>
+                <li><b>Property window</b>: Display informations of a single atom, atoms distances, bond angles, and other property of molecules.</li>
+            </ul>
+            
+            <hr><br>
+            
+            <h1 id="section-8">Mouse Operation</h1>
+            <p>
+                Most of the operations can be performed by pure mouse actions. Some operations require a combination of both keyboard and mouse. 
+                <b>Mouse</b> indicates left button of mouse.
+            </p>
+            <h2 id="section-9">In view mode</h2>
+            <ul>
+                <li><b>Mouse Drag</b>: Drag in the blank space will cause molecules rotate around some axis in space. 
+                    Note if you press mouse on any atom and then drag, molecules will not be rotated.
+                </li>
+                <li><b>Mouse Wheel</b>: Wheel will cause the whole scene to zoom in or out.</li>
+                <li><b>&lt;Shift&gt;+Mouse Drag</b>: Molecules will rotate around z axis only.</li>
+                <li><b>Mouse Click</b>: If you click on an atoms in view mode(press and release at the same position on an atom), 
+                    this atom will be selected and its informations (coordinates, element, atom index) will be printed in property window.
+                </li>
+                <li><b>&lt;Shift&gt;+Mouse Click</b>: The atom will be highlighted. If it has been highlighted, it will no longer be.</li>
+            </ul>
+            <h2 id="section-10">In draw mode</h2>
+            <ul>
+                <li><b>Mouse Drag</b>: In draw mode, it still works as in view mode.</li>
+                <li><b>Mouse Wheel</b>: In draw mode, it still works as in view mode.</li>
+                <li><b>Mouse Click</b>: </li>
+                    <ul>
+                        <li>If you click at blank position, a new atom will be created at this position (z-coordinate = 0).
+                            By default, element of new atom is carbon, and no additional H atom will be added. You can choose other element as well(See next section).</li>
+                        <li>If you click on an atom and new added atom is not H atom, the clicked atom will be replaced by new atom, and H atoms will be attached to new atom according to the <b>sp type</b> as well.</li>
+                        <li>If you click on an atom and new added atom is H atom, the clicked atom will be attached one more H atom.</li>
+                    </ul>
+                <li><b>Press on atom and Drag</b>: In draw mode, you can also add new atoms by pressing mouse on an atom, dragging mouse to blank space, and releasing mouse.</li>
+            </ul>
+            
+            <hr><br>
+            
+            <h1 id="section-11">Drawing Operation</h1>
+            <p>All of these operations can only be done in <b>Draw Mode</b></p>
+            <h2 id="section-12">Add new atom</h2>
+            <p>First you should make sure <button><img src="./src/img/icons/deleteatom1.png" width="30px" height="20px"></button> is not presses. Then you should choose the element of the new atom by <button><i class="fa fa-building-o drawicon"></i></button>(default C element).
+                Then you should choose the <b>sp type</b> of the new atom(default sp3). It determines how many bonds the atom can attach.
+            </p>
+            <p>Now, you can add the new atom by:</p>
+            <ul>
+                <li><b>Click at blank space.</b> New atom will be added at the clicking postion.</li>
+                <li><b>Click at existing atom.</b> The atom will be replaced by new atom, or one more H atom is attached to it(if new atom is H element).</li>
+                <li><b>Press on existing atom and drag into blank space.</b> New atom will be created and it is connected to the existing atom.</li>
+            </ul>
+            <p>Apart from the first way, new atom will be supplimented with H atoms according to its <b>sp type</b>.</p>
+    
+            <h2 id="section-13">Delete atom</h2>
+            <p>First you should click <button><img src="./src/img/icons/deleteatom1.png" width="30px" height="20px"></button>. Then all you need is just to click on the atom you want to delete. Bonds and H atoms connected with it will be deleted as well.</p>
+    
+            <h2 id="section-14">Add new bond</h2>
+            <p>First you must make sure that <button><img src="./src/img/icons/deletebond1.png" width="30px" height="20px"></button> is not pressed. You should press mouse on one atom, and drag to another then release mouse. And then the bond between them will be created.</p>
+    
+            <h2 id="section-15">Change bond type</h2>
+            <p>Just choose the bond type you want, and add it ignoring the existing bond. Old bond will be covered by the new one.</p>
+    
+            <h2 id="section-16">Delete bond</h2>
+            <p>Click <button><img src="./src/img/icons/deletebond1.png" width="30px" height="20px"></button>. Then press mouse on one atom, then drag to another one and release mouse. Then the bond between the two atoms will be deleted.</p>
+            
+            <hr><br>
+            
+            <h1 id="section-17">File Format</h1>
+            <p>Currently, this program supports files in formats below:
+                <ul>
+                    <li>.XYZ</li>
+                    <li>.SDF</li>
+                    <li>.CIF</li>
+                    <li>.MOL</li>
+                    <li>.INP</li>
+                </ul>
+            </p>
+            
+            <hr><br>
+        </div>
+    </div>
+</div>
+</body>
+</html>
