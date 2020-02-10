@@ -1,5 +1,5 @@
 # 3DStructGen
-An Interactively Web-based 3D Structure Generation.
+An Interactively Web-based 3D Structure Generation. This application is available via {{https://matgen.nscc-gz.cn/3DStructGen.html}}
 
 <img src="https://github.com/pincher-chen/3DStructGen/blob/master/pic/3DGen_Logo.png" width="60%" align ="center" />
 
