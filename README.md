@@ -1,5 +1,5 @@
 # 3DStructGen: an interactive web-based 3D structure generation for non-periodic molecule and crystal
-This application is available via [demo](https://matgen.nscc-gz.cn/3DStructGen.html)
+This application is available via [demo](https://matgen.nscc-gz.cn/3DStructGen.html).
 
 <img src="https://github.com/pincher-chen/3DStructGen/blob/master/pic/3DGen_Logo.png" width="60%" align ="center" />
 
