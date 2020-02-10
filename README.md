@@ -1,1 +1,1 @@
-# 3DStructGen_v1
+# 3DStructGen
